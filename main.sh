@@ -16,7 +16,7 @@ echo '[+] Starting libvirtd service'
 service libvirtd start
 
 echo '[+] Installing the operating system'
-virt-install --debug --name linux-build-test --ram 1024 --noreboot \
+virt-install --name linux-build-test --ram 1024 --noreboot \
     --disk path=./disk.qcow2,size=10 \
     --vcpus 1 --os-type linux --os-variant generic --network bridge=virbr0,mac=52:54:00:7c:a1:64 \
     --nographics --console pty,target_type=serial \
