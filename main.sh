@@ -9,6 +9,9 @@ else
     IMAGE='/iso/'$1
 fi
 
+echo '[+] Checking image file'
+ls -lh $IMAGE
+
 echo '[+] Starting libvirtd service'
 service libvirtd start
 
