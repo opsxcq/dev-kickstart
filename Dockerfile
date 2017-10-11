@@ -13,10 +13,10 @@ RUN apt-get update && \
 
 EXPOSE 5900
 
+VOLUME /iso
+
 VOLUME /src
 WORKDIR /src
 
 COPY main.sh /
 ENTRYPOINT ["/main.sh"]
-CMD ["default"]
-
