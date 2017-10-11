@@ -7,6 +7,7 @@ RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y \
     qemu qemu-kvm qemu-system-x86 qemu-system \
     libvirt-bin libvirt-clients virtinst \
+    cpio \
     && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
