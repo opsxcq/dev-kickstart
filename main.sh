@@ -7,6 +7,7 @@ then
 else
     echo '[+] Using the iso file '$1
     IMAGE='/iso/'$1
+fi
 
 echo '[+] Starting libvirtd service'
 service libvirtd start
