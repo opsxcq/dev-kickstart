@@ -26,3 +26,7 @@ virt-install --name linux-build-test --ram 1024 --noreboot \
 echo '[+] Optimizing the disk image'
 time qemu-img convert -c -O qcow2 disk.qcow2 disk-final.qcow2
 mv disk-final.qcow2 disk.qcow2
+
+
+
+bash
