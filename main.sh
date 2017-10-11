@@ -20,7 +20,7 @@ virt-install --name linux-build-test --ram 1024 --noreboot \
     --disk path=./disk.qcow2,size=10 \
     --vcpus 1 --os-type linux --os-variant generic --network bridge=virbr0,mac=52:54:00:7c:a1:64 \
     --nographics --console pty,target_type=serial \
-    --initrd-inject=vm.ks --extra-args "ks=file:/vm.ks console=ttyS0,115200n8 serial" \
+    --initrd-inject=/src/vm.ks --extra-args "ks=file:/vm.ks console=ttyS0,115200n8 serial" \
     --location=$IMAGE
 
 echo '[+] Optimizing the disk image'
