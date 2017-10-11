@@ -12,6 +12,9 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+# Setup virbr0
+COPY default-network.xml /etc/libvirt/qemu/networks/default.xml
+
 EXPOSE 5900
 
 VOLUME /iso

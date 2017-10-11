@@ -12,8 +12,10 @@ fi
 echo '[+] Checking image file'
 ls -lh $IMAGE
 
-echo '[+] Starting libvirtd service'
+echo '[+] Starting libvirtd service & default network'
 service libvirtd start
+sleep 4
+virsh net-start default
 
 echo '[+] Installing the operating system'
 virt-install --name linux-build-test --ram 1024 --noreboot \
