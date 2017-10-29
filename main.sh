@@ -14,7 +14,7 @@ ls -lh $IMAGE
 
 echo '[+] Starting libvirtd service & default network'
 service libvirtd start
-sleep 4
+sleep 5
 virsh net-start default
 
 echo '[+] Installing the operating system'
