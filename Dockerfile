@@ -5,6 +5,7 @@ LABEL maintainer "opsxcq@strm.sh"
 RUN apt-get update && \
     apt-get upgrade -y && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y \
+    git curl wget \
     qemu qemu-kvm qemu-system-x86 qemu-system \
     libvirt-bin libvirt-clients virtinst \
     cpio \
