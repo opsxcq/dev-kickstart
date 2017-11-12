@@ -23,4 +23,3 @@ VOLUME /src
 WORKDIR /src
 
 COPY main.sh /
-ENTRYPOINT ["/main.sh"]
